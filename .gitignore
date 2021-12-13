@@ -1,0 +1,24 @@
+#editor
+.vscode/
+
+# dependencies
+node_modules/
+npm-debug.log*
+.yarn/
+yarn.lock
+yarn-error.log
+
+# testing
+coverage/
+
+# production
+lib/
+dist/
+build/
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local

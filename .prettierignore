@@ -1,0 +1,4 @@
+lib/
+dist/
+build/
+.eslintrc.js

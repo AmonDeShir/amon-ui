@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "typeRoots": [
+      "node_modules/@types",
+      "src/types/*"
+    ],
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "composite": true,
+    "outDir": "./lib/esm",
+    "rootDir": "src",
+    "jsx": "react-jsx",
+    "noEmit": true,
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "target": "ESNext"
+  },
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "node_module",
+    "**/*.test.ts",
+    "**/*.test.tsx",
+    "**/*.story.tsx",
+    "**/*.story.mdx"
+  ]
+}
