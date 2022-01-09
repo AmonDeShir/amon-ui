@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import { theme } from '../themes/theme';
-import { ThemeFonts } from '../types/style';
+import { theme } from '../../themes/theme';
+import { ThemeFonts } from '../../types/style';
 
 const StyledButton = styled.button<{ size: keyof ThemeFonts }>`
   padding: 0 1.67em;
@@ -15,6 +15,7 @@ const StyledButton = styled.button<{ size: keyof ThemeFonts }>`
 
   color: ${({ theme }) => theme.colors.textInverted};
   font-size: ${({ theme, size }) => theme.font[size]};
+  font-family: ${({ theme }) => theme.fontFamily};
   text-align: center;
 
   user-select: none;

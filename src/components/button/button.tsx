@@ -1,4 +1,4 @@
-import { ThemeFonts } from '../types/style';
+import { ThemeFonts } from '../../types/style';
 import StyledButton from './button.styles';
 
 interface ButtonProps {

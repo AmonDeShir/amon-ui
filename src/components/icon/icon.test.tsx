@@ -1,6 +1,6 @@
 import { render, screen, fireEvent } from '@testing-library/react';
 import React from 'react';
-import getSvgColors from '../utils/get-svg-colors/get-svg-colors';
+import getSvgColors from '../../utils/get-svg-colors/get-svg-colors';
 import { Icon } from './icon';
 import * as animationsModule from './icon.animations';
 
@@ -132,7 +132,7 @@ describe('Icon', () => {
   });
 
   describe(`hoverAnimation`, () => {
-    const animations = jest.spyOn(animationsModule, 'default');
+    const animations = jest.spyOn(animationsModule, 'animations');
 
     beforeEach(() => {
       animations.mockClear();
@@ -168,7 +168,7 @@ describe('Icon', () => {
   });
 
   describe(`clickAnimation`, () => {
-    const animations = jest.spyOn(animationsModule, 'default');
+    const animations = jest.spyOn(animationsModule, 'animations');
 
     beforeEach(() => {
       animations.mockClear();

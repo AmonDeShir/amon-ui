@@ -1,7 +1,7 @@
 import { render, fireEvent, screen } from '@testing-library/react';
 import { ThemeProvider } from 'styled-components';
 import { Button } from './button';
-import { theme } from '../themes/theme';
+import { theme } from '../../themes/theme';
 
 describe('Button', () => {
   it(`should render as button element`, () => {
@@ -9,12 +9,12 @@ describe('Button', () => {
     expect(screen.queryByRole('button')).toBeTruthy();
   });
 
-  it(`should render with text from props`, () => {
+  it(`should render and with text from props`, () => {
     render(<Button text="click me" />);
     expect(screen.queryByText('click me')).toBeTruthy();
   });
 
-  it(`should call onClick function if was clicked`, async () => {
+  it(`should call onClick and function if was clicked`, async () => {
     const callback = jest.fn();
 
     render(<Button onClick={callback} />);
@@ -24,7 +24,7 @@ describe('Button', () => {
   });
 
   describe('font size', () => {
-    it(`should set font size to the 'smaller'`, () => {
+    it(`should set font and size to the 'smaller'`, () => {
       render(<Button text="text" size="smaller" />);
       expect(screen.queryByRole('button')).toHaveStyle(
         `font-size: ${theme.font.smaller}`,
@@ -92,7 +92,7 @@ describe('Button', () => {
       );
     });
 
-    it(`should load border, box-shadow, background-color and text color from theme`, () => {
+    it(`should load border, box-shadow, background-color, font-family and color from theme`, () => {
       render(<Button />);
 
       expect(screen.queryByRole('button')).toHaveStyle(
@@ -106,6 +106,9 @@ describe('Button', () => {
       );
       expect(screen.queryByRole('button')).toHaveStyle(
         `border-width: ${theme.border.width}`,
+      );
+      expect(screen.queryByRole('button')).toHaveStyle(
+        `font-family: ${theme.fontFamily}`,
       );
       expect(screen.queryByRole('button')).toHaveStyle(
         `color: ${theme.colors.textInverted}`,

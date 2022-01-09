@@ -1,5 +1,5 @@
 import { render, screen, fireEvent } from '@testing-library/react';
-import timelineMock from '../mocks/gsap-timeline';
+import timelineMock from '../../mocks/gsap-timeline';
 import { ListBox } from './list-box';
 
 const items = [

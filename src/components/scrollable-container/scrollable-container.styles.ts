@@ -1,6 +1,6 @@
 import Scrollbar from 'react-scrollbars-custom';
 import styled from 'styled-components';
-import { theme } from '../themes/theme';
+import { theme } from '../../themes/theme';
 
 type Size = {
   width: string;

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { theme } from '../themes/theme';
+import { theme } from '../../themes/theme';
 
 interface ContainerProps {
   orientation: 'horizontal' | 'vertical';

@@ -1,6 +1,6 @@
 import gsap from 'gsap';
 
-const animations = (
+export const animations = (
   name: 'shake' | 'spin' | 'scale',
   ref: React.MutableRefObject<Element>,
   animationTime: number,
@@ -29,5 +29,3 @@ const animations = (
         .to(ref.current, { scale: 1.5, duration: animationTime * 0.5 })
         .to(ref.current, { scale: 1, duration: animationTime * 0.5 }),
   }[name]());
-
-export default animations;

@@ -18,18 +18,19 @@ declare module 'styled-components' {
   export interface DefaultTheme {
     colors: ThemeColors;
     font: ThemeFonts;
+    fontFamily: string;
     shadow: string;
+    dropShadow: string;
     border: {
       radius: string;
       width: string;
       color: 'main' | 'accent';
     };
+    textBox: {
+      transparent: boolean;
+      shadow: boolean;
+    };
   }
 }
 
-export type Colors =
-  | 'first'
-  | 'second'
-  | 'background'
-  | 'text'
-  | 'text-inverted';
+export type Colors = 'main' | 'accent' | 'text' | 'textInverted';

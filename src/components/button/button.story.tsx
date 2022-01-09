@@ -1,9 +1,9 @@
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import { theme } from '../themes/theme';
+import { theme } from '../../themes/theme';
 import { Button } from './button';
 
 export default {
-  title: 'Button',
+  title: 'Components/Button',
   component: Button,
   argTypes: {
     onClick: { action: 'click' },

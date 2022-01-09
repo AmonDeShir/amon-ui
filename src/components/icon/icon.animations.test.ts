@@ -1,5 +1,5 @@
-import animations from './icon.animations';
-import timelineMock from '../mocks/gsap-timeline';
+import { animations } from './icon.animations';
+import timelineMock from '../../mocks/gsap-timeline';
 
 describe(`animations`, () => {
   const timeline = timelineMock.mock();

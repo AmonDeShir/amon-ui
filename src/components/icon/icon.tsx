@@ -1,5 +1,5 @@
 import { useRef } from 'react';
-import animations from './icon.animations';
+import { animations } from './icon.animations';
 import { StyledSvg } from './icon.styles';
 
 interface IconProps {

@@ -3,7 +3,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 import { ListBox } from './list-box';
 import { useState } from 'react';
-import { theme } from '../themes/theme';
+import { theme } from '../../themes/theme';
 
 export default {
   title: 'ListBox',

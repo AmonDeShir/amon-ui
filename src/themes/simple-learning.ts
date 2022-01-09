@@ -1,6 +1,7 @@
 import { DefaultTheme } from 'styled-components';
 
 export const simpleLearningTheme: DefaultTheme = {
+  fontFamily: 'Roboto',
   colors: {
     main: 'white',
     accent: '#BA6642',
@@ -12,7 +13,12 @@ export const simpleLearningTheme: DefaultTheme = {
     width: '0.2em',
     color: 'accent',
   },
+  textBox: {
+    transparent: true,
+    shadow: true,
+  },
   shadow: '0.06em 0.06em 0.23em 0.06em rgba(0,0,0,0.5)',
+  dropShadow: `drop-shadow(0em 0.16em 0.12em rgba(0,0,0,0.3))`,
   font: {
     bigger: '38px',
     big: '25px',

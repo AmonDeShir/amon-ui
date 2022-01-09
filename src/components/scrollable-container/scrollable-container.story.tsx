@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { ScrollableContainer } from './scrollable-container';
-import { theme } from "../themes/theme";
+import { theme } from "../../themes/theme";
 
 export default {
   title: 'ScrollableContainer',

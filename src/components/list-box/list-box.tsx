@@ -1,8 +1,8 @@
 import { useMemo, useRef } from 'react';
 
-import { useMemorableMemo } from '../utils/use-memorable-memo/use-memorable-memo';
+import { useMemorableMemo } from '../../utils/use-memorable-memo/use-memorable-memo';
 import { Container, Pointer, Item } from './list-box.styles';
-import useTimelineEffect from '../utils/use-timeline-effect/use-timeline-effect';
+import useTimelineEffect from '../../utils/use-timeline-effect/use-timeline-effect';
 
 interface ListBoxProps {
   /**
