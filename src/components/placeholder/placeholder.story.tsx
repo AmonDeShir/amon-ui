@@ -5,7 +5,7 @@ import { TextBox } from '../text-box/text-box';
 
 export default {
   component: Placeholder,
-  title: 'Components/Placeholder',
+  title: 'Placeholder',
   argTypes: {
     animation: {   
       options: [ 'none', 'move-from-center', 'disappear', 'scale' ],

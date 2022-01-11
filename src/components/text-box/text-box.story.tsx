@@ -4,7 +4,7 @@ import { TextBox } from './text-box';
 
 export default {
   component: TextBox,
-  title: 'Components/TextBox',
+  title: 'TextBox',
   argTypes: {
     onEdit: { action: 'edit' },
     size: {   

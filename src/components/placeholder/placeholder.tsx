@@ -8,7 +8,7 @@ import { useSizeSynchronizer } from '../../utils/use-size-synchronizer/use-size-
 import { animations } from './placeholder.animations';
 import { StyledPlaceholder, Container } from './placeholder.styles';
 
-type PlaceholderProps = {
+interface PlaceholderProps {
   /**
    * Placeholder will render this input and display itself on it.
    * Input's placeholder property will be overwritten.
@@ -53,7 +53,7 @@ type PlaceholderProps = {
    * Style of the placeholder, provided by the StyledComponents's ThemeProvider
    */
   theme?: DefaultTheme;
-};
+}
 
 /** Advantage placeholder for the text box component.
  * It can be positioned around wrapped component and also provide show and hide animations

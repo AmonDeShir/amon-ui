@@ -3,7 +3,7 @@ import { theme } from '../../themes/theme';
 import { Button } from './button';
 
 export default {
-  title: 'Components/Button',
+  title: 'Button',
   component: Button,
   argTypes: {
     onClick: { action: 'click' },

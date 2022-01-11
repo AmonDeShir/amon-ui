@@ -59,8 +59,8 @@ describe(`animations`, () => {
       [
         ref.current,
         {
-          left: 'calc(100% - max(0em,calc(0.12em*2)) - 0px)',
-          top: 'calc(100% - 0.12em/2 - 0px/2)',
+          left: 'calc(100% - max(1.2em,calc(0.2em*2)) - 0px)',
+          top: 'calc(100% - 0.2em/2 - 0px/2)',
           duration: 3,
         },
       ],
