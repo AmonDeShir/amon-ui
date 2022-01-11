@@ -10,9 +10,16 @@ export const skyrimTheme: DefaultTheme = {
   },
   shadow: 'inset 0em 0em 0.67em 0.17em rgba(0,0,0,0.5)',
   dropShadow: `drop-shadow(0em 0em 0.17em rgba(0,0,0,0.5))`,
+  textShadow: '0.02em 0.02em 0.04em',
   textBox: {
     transparent: true,
     shadow: false,
+  },
+  progressBar: {
+    transparent: true,
+    shadow: false,
+    innerShadow: 'inset 0em 0em 0.67em 0.17em rgba(0,0,0,0.5)',
+    borderRadius: '0em',
   },
   border: {
     radius: '0em',

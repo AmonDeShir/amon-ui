@@ -21,6 +21,7 @@ declare module 'styled-components' {
     fontFamily: string;
     shadow: string;
     dropShadow: string;
+    textShadow: string;
     border: {
       radius: string;
       width: string;
@@ -29,6 +30,12 @@ declare module 'styled-components' {
     textBox: {
       transparent: boolean;
       shadow: boolean;
+    };
+    progressBar: {
+      transparent: boolean;
+      shadow: boolean;
+      innerShadow: string;
+      borderRadius: string;
     };
   }
 }

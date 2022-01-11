@@ -15,9 +15,16 @@ export const tinWhistle: DefaultTheme = {
   },
   shadow: 'none',
   dropShadow: 'none',
+  textShadow: '0.02em 0.02em 0.04em',
   textBox: {
     transparent: true,
     shadow: false,
+  },
+  progressBar: {
+    transparent: true,
+    shadow: false,
+    innerShadow: 'inset 0em 0em 0.23em 0em rgba(0,0,0,0.25)',
+    borderRadius: '0em',
   },
   font: {
     bigger: '40px',

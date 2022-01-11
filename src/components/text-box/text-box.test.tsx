@@ -189,7 +189,7 @@ describe('TextBox', () => {
 
   describe(`theming`, () => {
     describe(`filter`, () => {
-      it(`should be and and setted to none if theme.textBox.shadow is falsy`, () => {
+      it(`should be and and set to none if theme.textBox.shadow is falsy`, () => {
         render(
           <ThemeProvider theme={testTheme({ shadow: false })}>
             <TextBox />
@@ -199,7 +199,7 @@ describe('TextBox', () => {
         expect(screen.queryByRole('textbox')).toHaveStyle(`filter: none`);
       });
 
-      it(`should be setted to the theme.drop-shadow if theme.textBox.shadow is truthy`, () => {
+      it(`should be set to the theme.drop-shadow if theme.textBox.shadow is truthy`, () => {
         render(
           <ThemeProvider theme={testTheme({ shadow: true })}>
             <TextBox />
@@ -213,7 +213,7 @@ describe('TextBox', () => {
     });
 
     describe(`background-color`, () => {
-      it(`should be setted to transparent color if theme.textBox.transparent is truthy`, () => {
+      it(`should be set to transparent color if theme.textBox.transparent is truthy`, () => {
         render(
           <ThemeProvider theme={testTheme({ transparent: true })}>
             <TextBox />
@@ -225,7 +225,7 @@ describe('TextBox', () => {
         );
       });
 
-      it(`should be setted to theme.colors.main if theme.textBox.transparent is falsy`, () => {
+      it(`should be set to theme.colors.main if theme.textBox.transparent is falsy`, () => {
         render(
           <ThemeProvider theme={testTheme({ transparent: false })}>
             <TextBox />

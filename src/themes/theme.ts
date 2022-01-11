@@ -4,4 +4,4 @@ import { skyrimTheme } from './skyrim';
 
 const themes = [tinWhistle, skyrimTheme, simpleLearningTheme];
 
-export const theme = themes[1];
+export const theme = themes[2];
