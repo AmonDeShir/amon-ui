@@ -10,7 +10,7 @@ import { StyledPlaceholder, Container } from './placeholder.styles';
 
 interface PlaceholderProps {
   /**
-   * Placeholder will render this input and display itself on it.
+   * Placeholder will render this input component and display itself on it.
    * Input's placeholder property will be overwritten.
    */
   input: JSX.Element;

@@ -21,18 +21,17 @@ interface ListBoxProps {
    */
   itemHeight?: number;
   /**
-   * Id of selected item, (Change it to change selected item)
+   * Id of the selected item, (Change it to change selected item)
    * @default undefined
    */
   value?: string;
   /**
-   * List of items that will be displayed by ListBox component. Record Key will be JSX.Element key, so it must be unique.
-   * This parameter can be modify.
+   * List of items that will be displayed. The record's key parameter will be an JSX.Element's key, so it must be unique.
    * @default []
    */
   items?: { key: string; data: JSX.Element }[];
   /**
-   * Optional select handler
+   * Item select handler. It will be called when the user selects an item. It returns the selected item's key in the callback parameter.
    * @default undefined
    */
   onSelect?: (value: string) => void;

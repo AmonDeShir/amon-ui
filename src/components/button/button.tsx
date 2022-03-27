@@ -3,19 +3,14 @@ import StyledButton from './button.styles';
 
 interface ButtonProps {
   /**
-   * Text that will be display on button
-   * @default ""
+   * The text thats will be rendered as a button's child.
    */
   text?: string;
   /**
-   * How big should be button?
-   * @default "normal"
+   * The size property controls button's width and height.
+   * @values smaller, small, normal, big, bigger
    */
   size?: keyof ThemeFonts;
-  /**
-   * Optional click handler
-   * @default undefined
-   */
   onClick?: () => void;
 }
 

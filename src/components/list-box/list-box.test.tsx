@@ -22,7 +22,7 @@ describe('ListBox', () => {
   });
 
   describe('aria role', () => {
-    it(`should be setted to 'listbox'`, () => {
+    it(`should be set to 'listbox'`, () => {
       render(<ListBox />);
 
       expect(screen.queryByRole('listbox')).toBeTruthy();

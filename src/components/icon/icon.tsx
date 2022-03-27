@@ -4,27 +4,27 @@ import { StyledSvg } from './icon.styles';
 
 interface IconProps {
   /**
-   * Type of icon
+   * The type property defines the icon's shape.
    */
   type: 'Pencil' | 'Eye' | 'Text' | 'Bin' | 'Plus';
   /**
-   * Background color of icon.
+   * The backgroundColor property defines the icon's color.
    */
   backgroundColor?: string;
   /**
-   * How large should the icon be?
+   * The size property controls icon's width and height.
    */
   size?: 'small' | 'medium' | 'large';
   /**
-   * What icon should do after hover?
+   * Animation that will be played when the user's mouse is over the icon.
    */
   hoverAnimation?: 'none' | 'shake' | 'spin' | 'scale';
   /**
-   * What icon should do after user click?
+   * Animation that will be played when the user clicks on the icon.
    */
   clickAnimation?: 'none' | 'shake' | 'spin' | 'scale';
   /**
-   * Optional click handler
+   * Click handler. It will be called when the user clicks on the icon. It returns the icon's type in the callback parameter.
    */
   onClick?: (type: 'Pencil' | 'Eye' | 'Text' | 'Bin' | 'Plus') => void;
 }
@@ -48,7 +48,7 @@ export const Icon = ({
       case 'small':
         return '25';
       default:
-        throw Error('The size parameter is setted to unsupported value');
+        throw Error('The size parameter is set to unsupported value');
     }
   };
 
@@ -141,7 +141,7 @@ export const Icon = ({
         );
 
       default:
-        throw new Error('The type parameter is setted to unsupported value');
+        throw new Error('The type parameter is set to unsupported value');
     }
   };
 
